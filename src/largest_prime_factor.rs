@@ -15,6 +15,9 @@ pub fn largest_prime_factor(n: &mut u64) -> u64 {
                 *n = *n / x;
                 largest = x;
             }
+            if *n == 1 {
+                return largest;
+            }
         }
     }
     largest
