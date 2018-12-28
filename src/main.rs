@@ -10,4 +10,9 @@ fn main() {
         "Problem 2: {}",
         project_euler::even_fibonacci::solve(4_000_000)
     );
+
+    println!(
+        "Problem 3: {}",
+        project_euler::largest_prime_factor::largest_prime_factor(&mut 600851475143)
+    );
 }
